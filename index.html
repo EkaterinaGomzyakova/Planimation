@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Plantmix Laboratory</title>
+    <style media="screen">
+    body {
+      background: #FF6EFD;
+    }
+
+    .apple {
+      width: 701px;
+      height: 651px;
+      display: block;
+      position: absolute;
+      left: 112px;
+      background: url('images/apple.svg');
+    }
+
+    /* стили банана */
+      .banana {
+        width: 1090px;
+        height: 1090px;
+        display: block;
+        position: relative;
+        z-index: 2;
+        background: url('images/banana.png');
+      }
+
+      .path{
+        width: 1090px;
+        height: 1090px;
+        display: block;
+        position: relative;
+        animation: path 5s linear;
+      }
+
+      .patha {
+        width: 701px;
+        height: 651px;
+        display: block;
+        position: absolute;
+        top: 280px;
+        animation: path 5s linear;
+        animation-delay: .3s;
+      }
+
+      .fall {
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: fall 5s steps(1);
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
+      }
+
+      .move {
+        animation: move .8s steps(1);
+      }
+
+      /* движение банана */
+      @keyframes move {
+        0% {background-position: 0 top;}
+        100% {background-position: 0 top;}
+      }
+
+      /* отвечает за падение */
+      @keyframes path {
+        0% {left: 0px; top:-2180px;}
+        100% {left: 0px; top: 19px;}
+      }
+
+      @keyframes patha {
+        0% {left: 0px; top:-651px;}
+        100% {left: 0px; top: 280px;}
+      }
+
+      /* упавший банан */
+      @keyframes fall {
+        0% {opacity: 0;}
+        100% {opacity: 1; background-position: 0 -1090px;}
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="path">
+      <div class="banana move"></div>
+      <div class="banana fall"></div>
+    </div>
+    <div class="patha">
+      <div class="apple move">/<div>
+    </div>
+
+  </body>
+</html>
