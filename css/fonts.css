@@ -1,8 +1,8 @@
 @font-face {
   font-family:"Manrope";
   src: url("../fonts/static/Manrope-Regular.ttf");
-  src: local("Manrope"),
-  url("../fonts/static/Manrope-Regular.ttf") format("truetype");
+  /* src: local("Manrope"),
+  url("../fonts/static/Manrope-Regular.ttf") format("truetype"); */
   font-weight: 400;
   font-style: normal;
 }
