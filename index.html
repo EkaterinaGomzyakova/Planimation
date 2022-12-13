@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Plantmix Laboratory</title>
     <link rel="stylesheet" href="css/style.css">
     <style media="screen">
@@ -94,10 +94,15 @@
       }
 
       .one {
-        margin: 90px, 0, 0, 25px;
+        position: absolute;
+        top: 90px;
+        left: 25px;
+        transition: opacity 0.3s linear 2s;
       }
       .two {
-        margin: 70px, 0, 0, 425px;
+        position: absolute;
+        top: 70px;
+        left: 425px;
         transform: rotate(-25deg);
       }
 
