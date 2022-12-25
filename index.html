@@ -5,140 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Plantmix Laboratory</title>
     <link rel="stylesheet" href="css/style.css">
-    <style media="screen">
-    body {
-      background: #FF6EFD;
-    }
-
-    .apple {
-      width: 701px;
-      height: 651px;
-      display: block;
-      position: absolute;
-      left: 112px;
-      background: url('images/apple.svg');
-    }
-
-    /* стили банана */
-      .banana {
-        width: 1090px;
-        height: 1090px;
-        display: block;
-        position: relative;
-        z-index: 2;
-        background: url('images/banana.png');
-      }
-
-      .path{
-        width: 1090px;
-        height: 1090px;
-        display: block;
-        position: relative;
-        animation: path 5s linear;
-      }
-
-      .patha {
-        width: 701px;
-        height: 651px;
-        display: block;
-        position: absolute;
-        top: 280px;
-        animation: path 5s linear;
-        animation-delay: .3s;
-      }
-
-      .fall {
-        position: absolute;
-        top: 0;
-        left: 0;
-        animation: fall 5s steps(1);
-        animation-delay: .5s;
-        animation-fill-mode: forwards;
-      }
-
-      .move {
-        animation: move .8s steps(1);
-      }
-
-      /* движение банана */
-      @keyframes move {
-        0% {background-position: 0 top;}
-        100% {background-position: 0 top;}
-      }
-
-      /* отвечает за падение */
-      @keyframes path {
-        0% {left: 0px; top:-2180px;}
-        100% {left: 0px; top: 19px;}
-      }
-
-      @keyframes patha {
-        0% {left: 0px; top:-651px;}
-        100% {left: 0px; top: 280px;}
-      }
-
-      /* упавший банан */
-      @keyframes fall {
-        0% {opacity: 0;}
-        100% {opacity: 1; background-position: 0 -1090px;}
-      }
-
-      h1 {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 128px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #1C39FF;
-      }
-
-      .one {
-        position: absolute;
-        top: 90px;
-        left: 25px;
-        transition: opacity 0.3s linear 2s;
-      }
-      .two {
-        position: absolute;
-        top: 70px;
-        left: 425px;
-        transform: rotate(-25deg);
-      }
-
-      .printer {
-        width: 1494px;
-        height: 44px;
-        margin: 213px, 0, 0, 90px;
-        background: #1C39FF;
-      }
-      .lab {
-        width: 406px;
-        height: 93px;
-        margin: 270px, 0px, 0px, 213px;
-        background: #FED700;
-        border-radius: 10px;
-      }
-
-    </style>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{https://ekaterinagomzyakova.github.io/Planimation/}">
+    <meta property="og:title" content="Лаборатория Plantmix">
+    <meta property="og:description" content="Веб-плакат для лаборатории растений Plantmix">
+    <meta property="og:image" content="images/preview.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="path">
-      <div class="banana move"></div>
-      <div class="banana fall"></div>
-    </div>
-    <div class="patha">
-      <div class="apple move"></div>
-    </div>
-    <h1 class="one">проц</h1>
-    <h1 class="two">есс</h1>
-    <h1 class="three">соз</h1>
-    <h1 class="four">дания</h1>
-    <h1 class="five">растений</h1>
-    <h1 class="six">раз</h1>
-    <h1 class="six">ные</h1>
-    <h1 class="seven">формы</h1>
-    <div class="printer"></div>
-    <div class="lab"></div>
+    <!-- блок1 -->
+    <section class="screen1">
+      <div class="block1">
+        <div class="header">
+          <h1>Лаборатория</h1>
+          <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="second">
+          <img class="plants" src="img/plants.svg">
+        </div>
+      </div>
+      <div class="third">
+        <div class="upimg">
+          <img class="up" src="img/up.svg">
+          <h2>Сбор заказов</h2>
+        </div>
+      <div class="downimg">
+        <img class="down" src="img/down.svg">
+        <h2>Синтез растений</h2>
+      </div>
+    </section>
+
+    <section class="screen2">
+      <div class="block2">
+        <div class="fourth">
+          <div class="code">
+            <p>HGNC: 64<br>HGNC: 05<br>HGNC: 54<br>HGNC: 96<br>HGNC: 02<br>HGNC: 12<br></p>
+            <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
+            <p>HGNC: 32<br>HGNC: 84<br>HGNC: 12<br>HGNC: 65<br>HGNC: 09<br>HGNC: 34<br></p>
+            <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
+          </div>
+          <h2>Генетический код</h2>
+        </div>
+        <div class="fifth">
+          <div class="battery"></div>
+          <div class="battery"></div>
+          <div class="battery"></div>
+          <div class="battery"></div>
+          <div class="battery"></div>
+          <div class="battery"></div>
+          <div class="battery"></div>
+          <div class="battery"></div>
+          <div class="battery"></div>
+        </div>
+        </div>
+        <div class="sixth">
+          <div class="cableholder">
+            <img class="cable" src="img/cable.svg">
+            <img class="holder"src="img/holder.svg">
+            <div class="box">
+              <img class="smallflower" src="img/smallflower.svg">
+            </div>
+          </div>
+        <div class="box2">
+          <img class="strawberry" src="img/strawberry.svg">
+        </div>
+        <img class="conveyor" src="img/conveyor.svg">
+      </div>
+    </section>
+    <section class="screen3">
+      <div class="seventh">
+        <div class="rectangles">
+          <div class="rectanglesm">
+            <img class="pinkseed" src="img/pinkseed.svg">
+          </div>
+          <div class="rectanglesm">
+            <img class="yellowseed" src="img/yellowseed.svg">
+          </div>
+          <div class="rectanglesm">
+            <img class="pinkseed" src="img/pinkseed.svg">
+          </div>
+        </div>
+        <div class="middle">
+          <div class="rectanglemid">
+            <img class="smallflowerye" src="img/smallflowerye.svg">
+          </div>
+          <div class="rectanglemid">
+            <img class="grape" src="img/grape.svg">
+          </div>
+        </div>
+        <div class="rectanleb">
+          <img class="appleflower" src="img/appleflower.svg">
+        </div>
+      </div>
+    </section>
+    <section class="screen4">
+      <h1>Москва, ул. Аграрная, 10</h1>
+    </section>
+    <section class="screen5">
+      <p>Екатерина Гомзякова<br>Б22ДЗ09</p>
+      <img class="logo" src="img/logo.svg">
+    </section>
   </body>
 </html>
