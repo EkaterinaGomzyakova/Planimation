@@ -381,20 +381,11 @@ header, .screen-2, .screen-3, .screen-4, footer {
     left: 0;
     animation: fall 5s steps(1);
     animation-delay: .5s;
-    animation-fill-mode: forwards; 
-  }
-
-  .move {
-    animation: move .8s steps(1);
+    animation-fill-mode: forwards;
   }
 
 /* фрукты */
 /* движение банана */
-@keyframes move {
-  0% {background-position: 0 top;}
-  100% {background-position: 0 top;}
-}
-
 /* отвечает за падение */
 @keyframes path-banana {
   0% {left: 0px; top: -1500px;}
