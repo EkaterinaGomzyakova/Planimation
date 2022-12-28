@@ -19,83 +19,103 @@
   <body>
     <!-- экран 1 -->
     <header class="header">
-      <!-- блок с названием -->
+      <!-- блок, объединяющий два первых блока -->
       <div class="block-1">
         <div class="name">
-        <h1>Лаборатория</h1>
-        <div class="cirle-row">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
+          <h1>Лаборатория</h1>
+          <div class="cirle-row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
         </div>
-      </div>
-      <!-- блок с растениями -->
-      <div class="plant-fall">
-        <div class="path">
-          <div class="banana move"></div>
-          <div class="banana fall"></div>
+      <!-- блок с падающими растениями -->
+        <div class="plant-fall">
+          <div class="path">
+            <div class="banana move"></div>
+            <div class="banana fall"></div>
+          </div>
+          <div class="path-apple">
+            <div class="apple move"></div>
+          </div>
         </div>
-        <div class="path-a">
-          <div class="apple move">/<div>
-        </div>
-      </div>
       </div>
       <!-- блок с указателями -->
       <div class="navigation">
+        <!-- вверх -->
         <div class="upimg">
           <img class="up" src="img/up.svg">
           <h2>Сбор заказов</h2>
         </div>
+        <!-- вниз -->
         <div class="downimg">
           <img class="down" src="img/down.svg">
           <h2>Синтез растений</h2>
         </div>
       </div>
-  </header>
-  <section class="screen-2">
-    <div class="block-2">
-      <div class="code">
-        <div class="text">
-          <p>HGNC: 64<br>HGNC: 05<br>HGNC: 54<br>HGNC: 96<br>HGNC: 02<br>HGNC: 12<br></p>
-          <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
-          <p>HGNC: 32<br>HGNC: 84<br>HGNC: 12<br>HGNC: 65<br>HGNC: 09<br>HGNC: 34<br></p>
-          <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
+    </header>
+    <!-- второй экран -->
+    <section class="screen-2">
+      <!-- контейнер для двух блоков -->
+      <div class="block-2">
+      <!-- блок с кодом -->
+        <div class="code">
+          <!-- текст кода -->
+          <div class="text">
+            <p>HGNC: 64<br>HGNC: 05<br>HGNC: 54<br>HGNC: 96<br>HGNC: 02<br>HGNC: 12<br></p>
+            <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
+            <p>HGNC: 32<br>HGNC: 84<br>HGNC: 12<br>HGNC: 65<br>HGNC: 09<br>HGNC: 34<br></p>
+            <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
+          </div>
+          <!-- заголовок блока -->
+          <h2>Генетический код</h2>
         </div>
-        <h2>Генетический код</h2>
+        <!-- блок загрузки -->
+        <div class="loading">
+          <!-- полоски -->
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
       </div>
-      <div class="loading">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-      </div>
-    </div>
-    <div class="production">
+      <!-- блок с конвейером и коробками -->
+      <div class="production">
+      <!-- держатель -->
       <div class="cableholder">
         <img class="holder"src="img/holder.svg">
-          <div class="box">
-            <img class="smallflower" src="img/smallflower.svg">
-          </div>
+        <!-- коробка 1 -->
+        <div class="box">
+          <!-- маленький цветок -->
+          <img class="smallflower" src="img/smallflower.svg">
+        </div>
       </div>
+      <!-- коробка 2 -->
       <div class="box-2">
+        <!-- ягода -->
         <img class="strawberry" src="img/strawberry.svg">
       </div>
+      <!-- лента конвейера -->
       <img class="conveyor" src="img/conveyor.svg">
     </div>
   </section>
+  <!-- экран 3 -->
   <section class="screen-3">
+    <!-- контейнер для выравнивания -->
     <div class="container">
-    <div class="block-3">
-      <div class="small">
-        <div class="rec-sm">
+      <!-- группа для всех квадратов -->
+      <div class="block-3">
+        <!-- маленькие квадраты -->
+        <div class="small">
+          <div class="rec-sm">
             <img class="pinkseed" src="img/pinkseed.svg">
           </div>
           <div class="rec-sm">
@@ -105,6 +125,7 @@
             <img class="pinkseed" src="img/pinkseed.svg">
           </div>
         </div>
+        <!-- средние квадраты -->
         <div class="middle">
           <div class="rec-mid">
             <img class="smallflowerye" src="img/smallflowerye.svg">
@@ -113,17 +134,21 @@
             <img class="grape" src="img/grape.svg">
           </div>
         </div>
+        <!-- большой квадрат -->
         <div class="rec-big">
           <img class="appleflower" src="img/appleflower.svg">
         </div>
       </div>
       </div>
     </section>
+    <!-- экран 4 -->
     <section class="screen-4">
+      <!-- бегущая строка -->
       <div class="block-4">
         <h1 class="marquee"><span>Москва, ул. Аграрная, 10</span></h1>
       </div>
     </section>
+    <!-- подвал -->
     <footer>
       <div class="block-5">
         <p>Екатерина Гомзякова<br>Б22ДЗ09</p>
