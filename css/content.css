@@ -309,13 +309,14 @@ p {
 }
 
 /* текст в бегущей строке */
-.block-4 h1 {
+.marquee {
   white-space: nowrap;
   margin: 26px 0;
   font-weight: 700;
   font-size: 128px;
   text-transform: uppercase;
   color: var(--blue);
+  animation: marquee 3.5s infinite linear;
 }
 
 /* блок в подвале */
@@ -330,11 +331,79 @@ p {
 }
 
 /* анимация для бегущей строки */
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 5s infinite linear;
+}
+
+.apple {
+  width: 1090px;
+  height: 750px;
+  background: url('../img/apple.svg');
+}
+
+/* стили банана */
+  .banana {
+    width: 1090px;
+    height: 1500px;
+    position: relative;
+    z-index: 2;
+    background: url('../img/banana.svg');
+  }
+
+  .path{
+    width: 1090px;
+    height: 1500px;
+    display: block;
+    position: relative;
+    animation: path 5s linear;
+  }
+
+  .patha {
+    width: 1090px;
+    height: 750px;
+    margin-top: 225px;
+    animation: path 5s linear;
+    animation-delay: .3s;
+  }
+
+  .fall {
+    animation: fall 5s steps(1);
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+  }
+
+  .move {
+    animation: move .8s steps(1);
+  }
+
+/* фрукты */
+/* движение банана */
+@keyframes move {
+  0% {background-position: 0 top;}
+  100% {background-position: 0 top;}
+}
+
+/* отвечает за падение */
+@keyframes path {
+  0% {left: 0px; top:-2180px;}
+  100% {left: 0px; top: 19px;}
+}
+
+@keyframes path-a {
+  0% {left: 0px; top:-651px;}
+  100% {left: 0px; top: 280px;}
+}
+
+  /* упавший банан */
+  @keyframes fall {
+    0% {opacity: 0;}
+    100% {opacity: 1; background-position: 0 -1090px;}
+  }
+
+/* анимация для бегущей строки */
 @keyframes scroll {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-100%, 0)
-    }
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0) }
 }
