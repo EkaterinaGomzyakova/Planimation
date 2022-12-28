@@ -1,20 +1,16 @@
 /* Ipad Pro 12.9 */
 @media all and (min-device-width: 834px) and (max-device-width: 1024px) {
-	/* header { flex-direction: column; } */
-	.name, .navigation, .plant-fall { flex: 5; }
+	header { flex-flow: column wrap; }
+	.name, .navigation, .plant-fall { width: 100vw; }
 	.navigation { flex-direction: row; }
 }
 
+@media all and (min-device-width: 414px) and (max-device-width: 834px) and (orientation: portrait) {
 
-
-
-@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-body { min-width: 320px; }
-body > * { width: calc(100% - 40px); }
 }
 
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	.sidebar { display: none; }
+
 }
 
 @media only screen and (min-width: 1224px) {

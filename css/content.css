@@ -42,27 +42,23 @@ p {
 }
 
 /* первый экран */
-.header, .screen-2 {
+.header, .screen-2, .screen-3, .screen-4, .footer {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row;
   max-width: 1920px;
   padding: 10px 10px 0 10px;
   margin: 0 auto;
 }
 
-/* все дочерние элементы в хедере с закруглением и синие */
-.header > * {
-  background-color: var(--blue);
-  border-radius: 10px;
-}
-
 /* блок с заголовком Лаборатория */
 .name {
-  max-width: 1545px;
+  /* max-width: 1518px; */
   display: flex;
   flex-direction: row;
   align-items: center;
   flex: 4;
+  background-color: var(--blue);
+  border-radius: 10px;
 }
 
 /* заголовок Лаборатория */
@@ -92,23 +88,28 @@ p {
 .plant-fall {
   display: flex;
   flex: 4;
-  max-width: 1545px;
-  margin: 10px 0;
+  max-width: 1518px;
+  margin: 10px 0 0 0;
+  background-color: var(--blue);
+  border-radius: 10px;
 }
 
 /* изображение в блоке */
 .plant-fall img {
   max-width: 1396px;
-  margin: 26px auto;
+  margin: 40px auto;
 }
 
 /* указатель */
 .navigation {
   display: flex;
   flex-direction: column;
-  row-gap: 352px;
+  justify-content: space-between;
+  /* row-gap: 284px; */
   flex: 1;
-  margin: 10px 0 10px 10px;
+  margin: 0 0 10px 10px;
+  background-color: var(--blue);
+  border-radius: 10px;
 }
 
 /* указатель вверх */
@@ -126,9 +127,13 @@ p {
   margin-bottom: 26px;
 }
 
-.block-2 {
+/* .block-1 {
   display: inline-block;
 }
+
+.block-2 {
+  display: inline-block;
+} */
 
 /* блок с кодом */
 .code {
@@ -180,5 +185,146 @@ p {
 
 /* блок с конвейером */
 .production {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 10px;
+  /* flex: 3; */
+  background-color: var(--blue);
+  border-radius: 10px;
+}
 
+/* коробка 1 */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px auto;
+  width: 442px;
+  height: 442px;
+  background-color: var(--white);
+}
+
+/* коробка 2 */
+.box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 495px 26px 0 13px;
+  width: 442px;
+  height: 442px;
+  background-color: var(--white);
+}
+
+/* держатель */
+.cableholder {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 204px;
+}
+
+/* цветок внутри коробки */
+.smallflower {
+  width: 316px;
+}
+
+/* ягода внутри коробки */
+.strawberry {
+  width: 330px;
+}
+
+/* лента конвейера */
+.conveyor {
+  width: 1136px;
+  margin: 940px 0 70px -1156px;
+}
+
+/* контейнер для выравнивания */
+.container {
+  display: flex;
+  flex: 5;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  background-color: var(--blue);
+  border-radius: 10px;
+}
+
+/* блок с тремя видами квадратов */
+.block-3 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* группа маленьких квадратов, группа средних квадратов*/
+.small, .middle {
+  display: flex;
+  flex-direction: column;
+}
+
+/* общие свойства для маленьких и средних квадратов */
+.rec-sm, .rec-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid var(--white);
+}
+
+/* маленькие квадраты */
+.rec-sm {
+  margin-top: -3px;
+  width: 134px;
+  height: 134px;
+}
+
+/* средние квадраты */
+.rec-mid {
+  margin-top: -3px;
+  width: 402px;
+  height: 402px;
+  border: 0.278vw solid var(--white);
+}
+
+/* большой квадрат */
+.rec-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 808px;
+  height: 808px;
+  background-color: var(--yellow);
+}
+
+/* картинка внутри большого квадрата */
+.appleflower {
+  width: 696px;
+}
+
+/* бегущая строка */
+.block-4 {
+  display: flex;
+  width: 1900px;
+  overflow: hidden;
+  background-color: var(--yellow);
+  border-radius: 10px;
+}
+
+/* текст в бегущей строке */
+.block-4 h1 {
+  white-space: nowrap;
+  margin: 26px 0;
+  font-weight: 700;
+  font-size: 128px;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+
+.block-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 10px;
+  padding: 46px 100px;
 }
