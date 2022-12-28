@@ -370,7 +370,8 @@ p {
   .path-apple {
     width: 1090px;
     height: 750px;
-    /* margin-top: 225px; */
+    margin-top: -700px;
+    position: relative;
     animation: path-apple 5s linear;
     animation-delay: .3s;
   }
@@ -381,7 +382,7 @@ p {
     left: 0;
     animation: fall 5s steps(1);
     animation-delay: .5s;
-    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: forwards;  */
   }
 
   .move {
