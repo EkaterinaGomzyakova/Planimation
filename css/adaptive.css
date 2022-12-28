@@ -1,3 +1,6 @@
+/* айпад большой */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1024px) {
+}
 /* айпад маленький */
 @media only screen and (min-device-width: 414px) and (max-device-width: 834px) {
   body {
