@@ -7,4 +7,13 @@
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: 'MacPawFixelDisplay';
+  src: url('../fonts/MacPawFixelDisplay-Bold.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/MacPawFixelDisplay-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
