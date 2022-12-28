@@ -87,11 +87,14 @@ p {
 /* блок с фруктами */
 .plant {
   display: flex;
+  flex-direction: column;
   flex: 4;
   max-width: 1518px;
   margin: 10px 0 0 0;
+  padding: 26px 60px;
   background-color: var(--blue);
   border-radius: 10px;
+  overflow: hidden;
 }
 
 /* изображение в блоке */
@@ -342,7 +345,7 @@ p {
   height: 750px;
   display: block;
   position: relative;
-  left: 143px;
+  /* margin-left: 143px; */
   background: url('../img/apple.svg');
 }
 
@@ -350,7 +353,7 @@ p {
   .banana {
     width: 1090px;
     height: 750px;
-    display: block;
+    /* display: block; */
     position: relative;
     z-index: 2;
     background: url('../img/banana.svg');
@@ -359,7 +362,7 @@ p {
   .path-banana{
     width: 1090px;
     height: 750px;
-    display: block;
+    /* display: block; */
     position: relative;
     animation: path-banana 5s linear;
   }
@@ -367,7 +370,7 @@ p {
   .path-apple {
     width: 1090px;
     height: 750px;
-    margin-top: 225px;
+    /* margin-top: 225px; */
     animation: path-apple 5s linear;
     animation-delay: .3s;
   }
@@ -378,7 +381,7 @@ p {
     left: 0;
     animation: fall 5s steps(1);
     animation-delay: .5s;
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; */
   }
 
   .move {
