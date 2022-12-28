@@ -42,7 +42,7 @@ p {
 }
 
 /* первый экран */
-.header, .screen-2, .screen-3, .screen-4, .footer {
+header, .screen-2, .screen-3, .screen-4, footer {
   display: flex;
   flex-flow: row;
   max-width: 1920px;
@@ -370,9 +370,8 @@ p {
   .path-apple {
     width: 1090px;
     height: 750px;
-    margin-top: -700px;
-    position: relative;
-    animation: path-apple 5s linear;
+    position: absolute;
+    animation: path-banana 5s linear;
     animation-delay: .3s;
   }
 
@@ -382,7 +381,7 @@ p {
     left: 0;
     animation: fall 5s steps(1);
     animation-delay: .5s;
-    /* animation-fill-mode: forwards;  */
+    animation-fill-mode: forwards; 
   }
 
   .move {
@@ -393,25 +392,25 @@ p {
 /* движение банана */
 @keyframes move {
   0% {background-position: 0 top;}
-  100% {background-position: left:0 -750px;}
+  100% {background-position: 0 top;}
 }
 
 /* отвечает за падение */
 @keyframes path-banana {
-  0% {left: 0px; top:-2180px;}
-  100% {left: 0px; top: 19px;}
+  0% {left: 0px; top: -1500px;}
+  100% {left: 0px; top: 155px;}
 }
 
 @keyframes path-apple {
-  0% {left: 0px; top:-651px;}
-  100% {left: 0px; top: 280px;}
+  0% {left: 0px; top: -750px;}
+  100% {left: 0px; top: 208px;}
 }
 
-  /* упавший банан */
-  @keyframes fall {
-    0% {opacity: 0;}
-    100% {opacity: 1; background-position: 0 -1090px;}
-  }
+/* упавший банан */
+@keyframes fall {
+  0% {opacity: 0;}
+  100% {opacity: 1; background-position: 0 -750px;}
+}
 
 /* анимация для бегущей строки */
 @keyframes scroll {
