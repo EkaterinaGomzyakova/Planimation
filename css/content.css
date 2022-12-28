@@ -124,12 +124,6 @@ body {
   margin: 1.354vw 5.208vw;
 }
 
-.circle-row {
-  display: flex;
-  flex-direction: row;
-  margin-left: 2.917vw;
-}
-
 .circle {
   width: 4.514vw;
   height: 4.514vw;
