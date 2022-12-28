@@ -17,11 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- экран 1 -->
-    <header>
-      <!-- блок, объединяющий два первых блока -->
-      <div class="block-1">
-        <div class="name">
+        <!-- название -->
+        <section class="block one">
           <h1>Лаборатория</h1>
           <div class="cirle-row">
             <div class="circle"></div>
@@ -31,9 +28,9 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-        </div>
+        </section>
       <!-- блок с падающими растениями -->
-        <div class="plant">
+        <section class="block two">
           <div class="path-banana">
             <div class="banana fall"></div>
           </div>
@@ -41,9 +38,9 @@
             <div class="apple"></div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- блок с указателями -->
-      <div class="navigation">
+      <section class="block three">
         <!-- вверх -->
         <div class="upimg">
           <img class="up" src="img/up.svg">
@@ -54,40 +51,34 @@
           <img class="down" src="img/down.svg">
           <h2>Синтез растений</h2>
         </div>
-      </div>
-    </header>
-    <!-- экран 2-->
-    <section class="screen-2">
-      <!-- контейнер для двух блоков -->
-      <div class="block-2">
+      </section>
       <!-- блок с кодом -->
-        <div class="code">
-          <!-- текст кода -->
-          <div class="text">
-            <p>HGNC: 64<br>HGNC: 05<br>HGNC: 54<br>HGNC: 96<br>HGNC: 02<br>HGNC: 12<br></p>
-            <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
-            <p>HGNC: 32<br>HGNC: 84<br>HGNC: 12<br>HGNC: 65<br>HGNC: 09<br>HGNC: 34<br></p>
-            <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
-          </div>
-          <!-- заголовок блока -->
-          <h2>Генетический код</h2>
-        </div>
-        <!-- блок загрузки -->
-        <div class="loading">
-          <!-- полоски -->
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
+    <section class="block four">
+      <!-- текст кода -->
+      <div class="text">
+        <p>HGNC: 64<br>HGNC: 05<br>HGNC: 54<br>HGNC: 96<br>HGNC: 02<br>HGNC: 12<br></p>
+        <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
+        <p>HGNC: 32<br>HGNC: 84<br>HGNC: 12<br>HGNC: 65<br>HGNC: 09<br>HGNC: 34<br></p>
+        <p>P45678<br>P45278<br>Q34204<br>A84873<br>A08833<br>A28835<br></p>
       </div>
+      <!-- заголовок блока -->
+      <h2>Генетический код</h2>
+    </section>
+        <!-- блок загрузки -->
+    <section class="block five">
+      <!-- полоски -->
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </section>
       <!-- блок с конвейером и коробками -->
-      <div class="production">
+      <section class="block six">
       <!-- держатель -->
       <div class="cableholder">
         <img class="holder"src="img/holder.svg">
@@ -107,10 +98,7 @@
     </div>
   </section>
   <!-- экран 3 -->
-  <section class="screen-3">
-    <!-- контейнер для выравнивания -->
-    <div class="container">
-      <!-- группа для всех квадратов -->
+  <section class="block seven">
       <div class="block-3">
         <!-- маленькие квадраты -->
         <div class="small">
@@ -141,18 +129,16 @@
       </div>
     </section>
     <!-- экран 4 -->
-    <section class="screen-4">
+    <section class="block eight">
       <!-- бегущая строка -->
       <div class="block-4">
-        <h1 class="marquee"><span>Москва, ул. Аграрная, 10</span></h1>
+        <!-- <h1 class="marquee"><span>Москва, ул. Аграрная, 10</span></h1> -->
       </div>
     </section>
     <!-- подвал -->
-    <footer>
-      <div class="block-5">
-        <p>Екатерина Гомзякова<br>Б22ДЗ09</p>
-        <img class="logo" src="img/logo.svg">
-      </div>
-    </footer>
+    <section class="block nine">
+      <p>Екатерина Гомзякова<br>Б22ДЗ09</p>
+      <img class="logo" src="img/logo.svg">
+    </section>
   </body>
 </html>

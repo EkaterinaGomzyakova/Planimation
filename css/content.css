@@ -6,15 +6,20 @@
   --white: #FFF;
 }
 
-/* общие стили */
 body {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(20, 9.167vw);
+  padding: 10px;
   background-color: var(--pink);
   font-family: "MacPawFixelDisplay", "Helvetica", "Arial", sans-serif;
 }
 
 /* заголовок 1 уровня */
 h1 {
-  font-family: 'MacPaw Fixel';
+  font-family: 'MacPawFixelDisplay';
   font-weight: 400;
   font-size: 86px;
   letter-spacing: 0.1em;
@@ -24,7 +29,7 @@ h1 {
 
 /* заголовок 2 уровня */
 h2 {
-  font-family: 'MacPaw Fixel';
+  font-family: 'MacPawFixelDisplay';
   font-weight: 400;
   font-size: 42px;
   letter-spacing: 0.05em;
@@ -41,298 +46,81 @@ p {
   color: var(--white);
 }
 
-/* первый экран */
-header, .screen-2, .screen-3, .screen-4, footer {
-  display: flex;
-  flex-flow: row;
-  max-width: 1920px;
-  padding: 10px 10px 0 10px;
-  margin: 0 auto;
+body > * {
+  position: relative;
+  display: block;
+  border-radius: 1.563vw;
+}
+body {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(20, 176px);
+  padding: 10px;
 }
 
-/* блок с заголовком Лаборатория */
-.name {
-  /* max-width: 1518px; */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex: 4;
-  background-color: var(--blue);
-  border-radius: 10px;
+.block {
+  position: relative;
+  display: block;
+  background: var(--blue);
+  border-radius: 30px;
 }
 
-/* заголовок Лаборатория */
-.name h1 {
-  margin: 26px 58px 26px 100px;
+.one {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
-
-/* круг */
-.circle {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: var(--yellow);
+.two {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
 }
-
-/* группа кругов */
-.cirle-row {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  max-width: 530px;
-  column-gap: 22px;
-  margin-right: 100px;
+.three {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 7;
 }
-
-/* блок с фруктами */
-.plant {
-  display: flex;
-  flex-direction: column;
-  flex: 4;
-  max-width: 1518px;
-  margin: 10px 0 0 0;
-  padding: 26px 60px;
-  background-color: var(--blue);
-  border-radius: 10px;
-  overflow: hidden;
+.four {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 11;
 }
-
-/* изображение в блоке */
-.plant-fall img {
-  max-width: 1396px;
-  margin: 40px auto;
+.five {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 13;
 }
-
-/* указатель */
-.navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* row-gap: 284px; */
-  flex: 1;
-  margin: 0 0 10px 10px;
-  background-color: var(--blue);
-  border-radius: 10px;
+.six {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 13;
 }
-
-/* указатель вверх */
-.upimg {
-  margin: 54px auto 54px 54px;
+.seven {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 13;
+  grid-row-end: 19;
 }
-
-/* указатель вниз */
-.downimg {
-  margin: 54px auto 54px 54px;
+.eight {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 19;
+  grid-row-end: 20;
 }
-
-/* расстояние до изображений */
-.up, .down {
-  margin-bottom: 26px;
+.nine {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 20;
+  grid-row-end: 21;
 }
-
-/* .block-1 {
-  display: inline-block;
-}
-
-.block-2 {
-  display: inline-block;
-} */
-
-/* блок с кодом */
-.code {
-  display: flex;
-  flex-direction: column;
-  max-width: 690px;
-  padding: 80px 100px;
-  background-color: var(--blue);
-  border-radius: 10px;
-}
-
-/* заголовок Генетический код */
-.code h2 {
-  font-size: 70px;
-  margin-top: 134px;
-}
-
-/* текст кода */
-.text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* высота строки для кода */
-.text p {
-  line-height: 70px;
-}
-
-/* блок загрузки */
-.loading {
-  display: flex;
-  flex-direction: row;
-  column-gap: 6px;
-  margin: 10px 0 10px 0px;
-  max-width: 910px;
-  padding: 20px;
-  background-color: var(--blue);
-  border-radius: 10px;
-}
-
-/* элемент загрузки */
-.item {
-  width: 65px;
-  height: 236px;
-  border-radius: 14px;
-  background-color: var(--yellow);
-}
-
-/* блок с конвейером */
-.production {
-  display: flex;
-  flex-direction: row;
-  margin: 0 0 0 10px;
-  /* flex: 3; */
-  background-color: var(--blue);
-  border-radius: 10px;
-}
-
-/* коробка 1 */
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: -30px auto;
-  width: 442px;
-  height: 442px;
-  background-color: var(--white);
-}
-
-/* коробка 2 */
-.box-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 495px 26px 0 13px;
-  width: 442px;
-  height: 442px;
-  background-color: var(--white);
-}
-
-/* держатель */
-.cableholder {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 0 204px;
-}
-
-/* цветок внутри коробки */
-.smallflower {
-  width: 316px;
-}
-
-/* ягода внутри коробки */
-.strawberry {
-  width: 330px;
-}
-
-/* лента конвейера */
-.conveyor {
-  width: 1136px;
-  margin: 940px 0 70px -1156px;
-}
-
-/* контейнер для выравнивания */
-.container {
-  display: flex;
-  flex: 5;
-  justify-content: center;
-  align-items: center;
-  padding: 120px;
-  background-color: var(--blue);
-  border-radius: 10px;
-}
-
-/* блок с тремя видами квадратов */
-.block-3 {
-  display: flex;
-  flex-direction: row;
-}
-
-/* группа маленьких квадратов, группа средних квадратов*/
-.small, .middle {
-  display: flex;
-  flex-direction: column;
-}
-
-/* общие свойства для маленьких и средних квадратов */
-.rec-sm, .rec-mid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 6px solid var(--white);
-}
-
-/* маленькие квадраты */
-.rec-sm {
-  margin-top: -3px;
-  width: 134px;
-  height: 134px;
-}
-
-/* средние квадраты */
-.rec-mid {
-  margin-top: -3px;
-  width: 402px;
-  height: 402px;
-  border: 0.278vw solid var(--white);
-}
-
-/* большой квадрат */
-.rec-big {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 808px;
-  height: 808px;
-  background-color: var(--yellow);
-}
-
-/* картинка внутри большого квадрата */
-.appleflower {
-  width: 696px;
-}
-
-/* бегущая строка */
-.block-4 {
-  display: flex;
-  width: 1900px;
-  overflow: hidden;
-  background-color: var(--yellow);
-  border-radius: 10px;
-}
-
-/* текст в бегущей строке */
-.marquee {
-  white-space: nowrap;
-  margin: 26px 0;
-  font-weight: 700;
-  font-size: 128px;
-  text-transform: uppercase;
-  color: var(--blue);
-  animation: marquee 3.5s infinite linear;
-}
-
-/* блок в подвале */
-.block-5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--blue);
-  border-radius: 10px;
-  padding: 46px 100px;
-}
-
 /* анимация для бегущей строки */
 .marquee span {
   display: inline-block;
