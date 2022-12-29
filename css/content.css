@@ -111,7 +111,7 @@ body {
 }
 .six {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 7;
@@ -181,7 +181,7 @@ body {
 /* полоски в загрузке */
 .item {
   width: 3.333vw;
-  height: 12.292vw;
+  height: 14.292vw;
   background: var(--yellow);
   border-radius: 0.694vw;
   /* margin: 0.972vw 0 0 0.972vw; */
@@ -190,12 +190,12 @@ body {
 .cableholder {
   display: flex;
   flex-direction: column;
-  margin-left: 10.791vw;
+  margin-left: 10vw;
 }
 
 .holder{
   width: 23.750vw;
-  height: 17.969vw;
+  height: 17.5vw;
 }
 
 .box, .box-2 {
@@ -211,8 +211,8 @@ body {
   margin-top: -1.042vw;
 }
 .box-2 {
-  margin-left: 0.694vw;
-  margin-top: 25.625vw;
+  margin-top: -9vw;
+  margin-left: 34.4vw;
 }
 
 .conveyor {
@@ -226,10 +226,12 @@ body {
   width: 16.458vw;
   height: 16.458vw;
 }
+
 .strawberry {
   width: 17.135vw;
-  height: 18.385vw;
+  height: 32.9vw;
 }
+
 /* анимация для бегущей строки */
 .marquee span {
   display: inline-block;
