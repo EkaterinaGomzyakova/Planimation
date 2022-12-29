@@ -366,38 +366,38 @@ body {
 }
 
 /* стили банана */
-  .banana {
-    width: 1090px;
-    height: 750px;
-    /* display: block; */
-    position: relative;
-    z-index: 2;
-    background: url('../img/banana.svg');
+.banana {
+  width: 1090px;
+  height: 750px;
+  /* display: block; */
+  position: relative;
+  z-index: 2;
+  background: url('../img/banana.svg');
+}
+
+.path-banana{
+  width: 1090px;
+  height: 750px;
+  /* display: block; */
+  position: relative;
+  animation: path-banana 5s linear;
   }
 
-  .path-banana{
-    width: 1090px;
-    height: 750px;
-    /* display: block; */
-    position: relative;
-    animation: path-banana 5s linear;
+.path-apple {
+  width: 1090px;
+  height: 750px;
+  position: absolute;
+  animation: path-banana 5s linear;
+  animation-delay: .3s;
   }
 
-  .path-apple {
-    width: 1090px;
-    height: 750px;
-    position: absolute;
-    animation: path-banana 5s linear;
-    animation-delay: .3s;
-  }
-
-  .fall {
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: fall 5s steps(1);
-    animation-delay: .5s;
-    animation-fill-mode: forwards;
+.fall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fall 5s steps(1);
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
   }
 
 /* фрукты */
