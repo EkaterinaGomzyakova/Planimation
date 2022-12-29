@@ -77,6 +77,9 @@ body {
   grid-row-end: 2;
 }
 .two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -351,6 +354,15 @@ body {
   position: relative;
   /* margin-left: 143px; */
   background: url('../img/apple.svg');
+}
+
+.plants {
+  width: 72.760vw;
+  height: 43.438vw;
+}
+
+.plants:hover {
+    transform: scale(1.2);
 }
 
 /* стили банана */
