@@ -102,7 +102,7 @@ body {
 .five {
   display: flex;
   flex-direction: row;
-  /* column-gap: 0.480vw; */
+  column-gap: 0.480vw; 
   padding: 2.278vw;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -181,7 +181,7 @@ body {
   height: 12.292vw;
   background: var(--yellow);
   border-radius: 0.694vw;
-  margin: 0.972vw 0 0 0.972vw;
+  /* margin: 0.972vw 0 0 0.972vw; */
 }
 
 .cableholder {
