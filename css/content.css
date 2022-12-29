@@ -21,7 +21,8 @@ body {
 h1 {
   font-family: 'MacPawFixelDisplay';
   font-weight: 400;
-  font-size: 86px;
+  font-size: 4.444vw;
+  line-height: 8.889vw;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--white);
@@ -31,7 +32,8 @@ h1 {
 h2 {
   font-family: 'MacPawFixelDisplay';
   font-weight: 400;
-  font-size: 42px;
+  font-size: 2.222vw;
+  line-height: 3.056vw;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--white);
@@ -39,10 +41,11 @@ h2 {
 
 /* параграф */
 p {
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  text-transform: uppercase;
+  font-size: 1.667vw;
+  line-height: 2.083vw;
   color: var(--white);
 }
 
@@ -66,6 +69,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  column-gap: 1.146vw;
+  padding: 1.354vw 5.208vw;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -124,6 +129,17 @@ body {
   margin: 1.354vw 5.208vw;
 }
 
+/* группа квадратов */
+.block-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+
 .circle {
   width: 4.514vw;
   height: 4.514vw;
@@ -137,7 +153,13 @@ body {
   padding-left: 100%;
   animation: scroll 5s infinite linear;
 }
-
+.marquee {
+  font-weight: 700;
+  font-size: 8.889vw;
+  line-height: 12.292vw;
+  white-space: nowrap;
+  color: var(--blue);
+}
 .apple {
   width: 1090px;
   height: 750px;
