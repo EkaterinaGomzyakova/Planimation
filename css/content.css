@@ -131,6 +131,7 @@ body {
   grid-column-end: 6;
   grid-row-start: 19;
   grid-row-end: 20;
+  background: var(--yellow);
 }
 .nine {
   display: flex;
@@ -165,7 +166,7 @@ body {
 .up, .down {
   width: 5.313vw;
   height: 5.625vw;
-    margin-bottom: 1.354vw;
+  margin-bottom: 1.354vw;
 }
 
 /* текст кода */
