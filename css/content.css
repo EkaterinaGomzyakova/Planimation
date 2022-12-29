@@ -54,7 +54,7 @@ body {
   row-gap: 10px;
   column-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(20, 176px);
+  grid-template-rows: repeat(20, 9.167vw);
   padding: 10px;
 }
 
@@ -70,7 +70,7 @@ body {
   flex-direction: row;
   align-items: center;
   column-gap: 1.146vw;
-  padding: 1.354vw 5.208vw;
+  padding: 1.354vw 4vw;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -110,12 +110,17 @@ body {
   grid-row-end: 13;
 }
 .six {
+  display: flex;
+  flex-direction: row;
   grid-column-start: 3;
   grid-column-end: 6;
   grid-row-start: 7;
   grid-row-end: 13;
 }
 .seven {
+  display: flex;
+  flex-direction: row;
+  padding: 6.250vw 14.375vw;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 13;
@@ -128,6 +133,10 @@ body {
   grid-row-end: 20;
 }
 .nine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.396vw 5.208vw;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 20;
@@ -156,15 +165,9 @@ body {
 .up, .down {
   width: 5.313vw;
   height: 5.625vw;
+    margin-bottom: 1.354vw;
 }
 
-.up {
-  margin-bottom: 1.354vw;
-}
-
-.down {
-  margin-top: 1.354vw;
-}
 /* текст кода */
 .text {
   display: flex;
@@ -195,6 +198,38 @@ body {
   height: 17.969vw;
 }
 
+.box, .box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.917vw;
+  height: 22.917vw;
+  background: var(--white);
+}
+.box {
+  margin-left: 0.417vw;
+  margin-top: -1.042vw;
+}
+.box-2 {
+  margin-left: 0.694vw;
+  margin-top: 25.625vw;
+}
+
+.conveyor {
+  width: 59.167vw;
+  height: 2.240vw;
+  margin-left: -62.458vw;
+  margin-top: 49.236vw;
+}
+
+.smallflower {
+  width: 16.458vw;
+  height: 16.458vw;
+}
+.strawberry {
+  width: 17.135vw;
+  height: 18.385vw;
+}
 /* анимация для бегущей строки */
 .marquee span {
   display: inline-block;
