@@ -246,6 +246,7 @@ body {
   font-size: 8.889vw;
   line-height: 12.292vw;
   white-space: nowrap;
+  overflow: hidden;
   color: var(--blue);
 }
 .apple {
