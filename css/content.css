@@ -11,7 +11,7 @@ body {
   row-gap: 10px;
   column-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(20, 9.167vw);
+  grid-template-rows: repeat(20, 176px);
   padding: 10px;
   background-color: var(--pink);
   font-family: "MacPawFixelDisplay", "Helvetica", "Arial", sans-serif;
@@ -233,6 +233,7 @@ body {
 }
 .circle:hover {
   transform: scale(0.5);
+
 }
 /* стрелки */
 .up, .down {
