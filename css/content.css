@@ -231,7 +231,9 @@ body {
   border-radius: 50%;
   background: var(--yellow);
 }
-
+.circle:hover {
+  transform: scale(0.5);
+}
 /* стрелки */
 .up, .down {
   width: 5.313vw;
