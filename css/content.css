@@ -161,7 +161,8 @@ body {
   align-items: center;
   width: 6.979vw;
   height: 6.979vw;
-  border: 0.313vw solid var(--white);
+  /* border: 0.313vw solid var(--white); */
+  margin-top: -0.156vw;
 }
 
 .rec-mid {
@@ -170,8 +171,8 @@ body {
   align-items: center;
   width: 20.938vw;
   height: 20.938vw;
-  border: 0.313vw solid var(--white);
-
+  /* border: 0.313vw solid var(--white); */
+  margin-top: -0.156vw;
 }
 
 .rec-big {
@@ -180,8 +181,42 @@ body {
   align-items: center;
   width: 42.083vw;
   height: 42.083vw;
-  border: 0.313vw solid var(--white);
+  background: var(--yellow);
+  /* border-radius: 0.313vw solid var(--yellow); */
 }
+
+.smallflowerye {
+  width: 16.389vw;
+  height: 16.389vw;
+}
+
+.smallflowerye:hover {
+  transform: scale(1.2);
+}
+
+.grape {
+  width: 16.875vw;
+  height: 17.431vw;
+}
+
+.grape:hover {
+  transform: scale(1.2);
+}
+
+.pinkseed, .yellowseed {
+  width: 2.188vw;
+  height: 4.948vw;
+}
+
+.appleflower {
+  width: 36.111vw;
+  height: 35.278vw;
+}
+
+.appleflower:hover {
+  transform: scale(-1);
+}
+
 .pinkseed:hover {
   transform: scale(1.5);
 }
