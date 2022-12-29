@@ -83,18 +83,27 @@ body {
   grid-row-end: 7;
 }
 .three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.813vw;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 7;
 }
 .four {
+  padding: 8.993vw 5.036vw;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 7;
   grid-row-end: 11;
 }
 .five {
+  display: flex;
+  flex-direction: row;
+  /* column-gap: 0.480vw; */
+  padding: 2.278vw;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 11;
@@ -125,10 +134,6 @@ body {
   grid-row-end: 21;
 }
 
-.name {
-  margin: 1.354vw 5.208vw;
-}
-
 /* группа квадратов */
 .block-3 {
   display: flex;
@@ -145,6 +150,49 @@ body {
   height: 4.514vw;
   border-radius: 50%;
   background: var(--yellow);
+}
+
+/* стрелки */
+.up, .down {
+  width: 5.313vw;
+  height: 5.625vw;
+}
+
+.up {
+  margin-bottom: 1.354vw;
+}
+
+.down {
+  margin-top: 1.354vw;
+}
+/* текст кода */
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.code {
+  margin-top: 5.556vw;
+  text-align: center;
+}
+/* полоски в загрузке */
+.item {
+  width: 3.333vw;
+  height: 12.292vw;
+  background: var(--yellow);
+  border-radius: 0.694vw;
+  margin: 0.972vw 0 0 0.972vw;
+}
+
+.cableholder {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10.791vw;
+}
+
+.holder{
+  width: 23.750vw;
+  height: 17.969vw;
 }
 
 /* анимация для бегущей строки */
